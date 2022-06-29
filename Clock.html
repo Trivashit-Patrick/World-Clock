@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fontawesome.com/search?q=clock&s=solid%2Cbrands">
+    <!-- Css file link -->
+    <link rel="stylesheet" href="Css/clock.css">
+
+    <title>World Clock </title>
+    <link rel="icon" type="image/x-icon" href="Images/clock-solid.svg">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- End Of bootstrap css -->
+
+  </head>
+    <body>    
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-dark bg-primary navbar ">
+        <div class="container-fluid">
+          <a class="navbar-brand ">World Clock <i class="fa-solid fa-clock"></i></a>
+          <div class="dropdown-center">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown" aria-expanded="false">
+              Countries
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
+              <li><a class="dropdown-item" href="Clock.html" >India
+              </a></li>
+              <li><a class="dropdown-item" href="#" onclick="clearInterval(Indian_time),clearInterval(OtherTimeZone),European_countries(), document.getElementById('country-time').innerHTML='Spain' ">Spain
+              </a></li>
+              <li><a class="dropdown-item" href="#" onclick="clearInterval(Indian_time), clearInterval(OtherTimeZone),European_countries(),document.getElementById('country-time').innerHTML='France'">France
+              </a></li>
+              <li><a class="dropdown-item" href="#" onclick="clearInterval(Indian_time),clearInterval(OtherTimeZone),European_countries(),document.getElementById('country-time').innerHTML='Italy'">Italy</a></li>
+              <li><a class="dropdown-item" href="#" onclick="clearInterval(Indian_time),clearInterval(OtherTimeZone),European_countries(),document.getElementById('country-time').innerHTML='Germany'">Germany</a></li>
+              <li><a class="dropdown-item" href="#" onclick="clearInterval(Indian_time),clearInterval(OtherTimeZone),European_countries(),document.getElementById('country-time').innerHTML='Denmark'">Denmark</a></li>
+              <li><a class="dropdown-item" href="#" onclick="clearInterval(Indian_time),clearInterval(OtherTimeZone),European_countries(),document.getElementById('country-time').innerHTML='Norway'">Norway</a></li>
+              <li><a class="dropdown-item" href="#" onclick="clearInterval(Indian_time), clearInterval(OtherTimeZone)  ,EnglandTime(),document.getElementById('country-time').innerHTML='England'">England</a></li>
+              <li><a class="dropdown-item" href="#" onclick="clearInterval(Indian_time), clearInterval(OtherTimeZone)  ,EnglandTime(),document.getElementById('country-time').innerHTML='Portugal'">Potugal</a></li>
+            </ul>
+          </div>
+        </div>
+        </nav>
+        <!-- End of navbar -->
+
+        <script src="Scripting/clock.js"> </script>
+
+        <!-- First Section Of World Clock  -->
+        <div class="container mt-4 p-3 top-section">
+            <div class="row">
+                <div class="col">
+                  <h1>Do you need Time for <span id = 'country-time'></span> ? So here it is...</h1>
+                </div>
+            </div>
+        </div>
+        <!-- End Of first Section -->
+
+        <!-- Second section of world clock -->
+        <div class="container section-two ">
+            <div class="row p-sm-5">
+                <div class="col">
+                  <h1> <span id='time'></span> </h1>
+                </div>
+            </div>
+        </div>
+        <!-- End of second Section -->
+        <script src="https://kit.fontawesome.com/0d2249af7c.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+        
+    </body>
+</html>

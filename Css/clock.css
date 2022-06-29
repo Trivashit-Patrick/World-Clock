@@ -1,0 +1,55 @@
+body {
+    background-image: url("/Images/Body_Background.jpg");
+    background-position:center;
+    overflow-x: hidden;
+    
+}
+
+.navbar{
+    font-family:  'Secular One', sans-serif;
+}
+       
+.top-section{
+    background-color: #F7EC09;
+    border-radius: 0.3cm;
+    opacity: 90%;
+}
+
+.top-section h1{
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+    font-weight:lighter;            
+}
+
+.section-two{
+    background-color:#383838;
+    opacity: 90%;
+    border-radius: 0.3cm ;
+    
+}
+
+.section-two h5{
+    font-family:  'Secular One', sans-serif;
+    padding: 70px 0;
+    text-align:left;
+    color: aliceblue;
+    font-size:180%;
+}
+
+.section-two h1{
+    text-align: center;
+}
+
+
+
+#time {
+
+    font-family:  'Secular One', sans-serif;
+    color: aliceblue;
+    font-size: 2.5cm;
+    
+}
+
+
+
+
